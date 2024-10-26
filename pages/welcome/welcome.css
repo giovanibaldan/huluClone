@@ -1,20 +1,34 @@
-@import url(/pages/fonts.css);
+@import url(/assets/fonts/fonts.css);
 
 * {
     padding: 0;
     margin: 0;
+    font-family: "Graphik-Regular", sans-serif;
+    color: whitesmoke;
+    font-weight: 400;
+    line-height: 1.24;
+    letter-spacing: 0.2px;
 }
+
+button {
+    cursor: pointer;
+}
+
+
+/* HEADER - INICIO */
+
 
 .section1 {
-    height: 475px;
+    height: 56vh;
     width: 100%;
+    /* padding-bottom: 50vh; */
 }
 
-.header-background{
+.header-background {
     width: 100%;
     height: 695px;
     z-index: -100;
-    position: fixed;
+    position: absolute;
     overflow-y: hidden;
 }
 
@@ -40,12 +54,12 @@
     /* z-index: 1; */
 }
 
-.nav-login{
+.nav-login {
     /* z-index: 1; */
     background: none;
     font-family: "Graphik-Medium", sans-serif;
     border: none;
-    border-radius: 10%;
+    border-radius: 7px;
     color: #a8afbd;
     width: 4.5vw;
     height: 4.2vh;
@@ -56,27 +70,202 @@
     font-size: 80%;
 }
 
-.nav-login:hover{
+.nav-login:hover {
     background-color: rgb(50, 56, 67);
     color: whitesmoke;
 }
 
-.disney-packages{
+.disney-packages {
+    margin-top: 9.2vh;
+    /* background-color: rgb(0, 0, 118); */
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.disney-package-div{
+.disney-package-div {
+    width: 18.5%;
     display: inline-block;
+    /* background-color: rgb(0, 108, 135); */
+    text-align: center;
+    margin-left: 0.4vw;
+    margin-right: 0.4vw;
 }
 
-.title-packages{
-    color: rgb(4, 206, 113);
+.title-packages {
+    color: rgb(28, 231, 131);
     font-family: "Graphik-Semibold", sans-serif;
+    font-size: 12px;
+    padding-bottom: 1.4vh;
+    user-select: none;
 }
 
 .img-packages {
-    width: 300px;
-    height: 60px;
+    width: 90%;
+    height: 6.5vh;
+
 }
+
+.price-packages {
+    color: whitesmoke;
+    /* letter-spacing: 100%; */
+    line-height: 3.1vh;
+    /* font-size: 5vmin, 10vmax; */
+    font-size: 22px;
+    margin-bottom: 1.5vh;
+    transform: scaleY(1.05);
+    padding-top: 1.5vh;
+    font-weight: 600;
+}
+
+.submit-packages {
+    font-family: "Graphik-Regular", sans-serif;
+    background-color: rgb(28, 231, 131);
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    /* height: 4.5vh; */
+    /* letter-spacing: 0.1vh; */
+    transition: background-color 0.1s ease, color 0.1s ease;
+    font-size: 12.5px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.6px;
+    height: 40px;
+    overflow: hidden;
+    color: black;
+}
+
+.submit-packages:hover {
+    background-color: rgba(28, 231, 131, 0.85);
+}
+
+.terms-apply-div {
+    padding-top: 1.5vh;
+    width: 100%;
+}
+
+.terms-apply-packages {
+    font-size: 13px;
+    color: whitesmoke;
+}
+
+.div-sign-up-hulu-only {
+    padding-top: 3vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up-hulu-only {
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.sign-up-hulu-only:hover {
+    text-decoration: none;
+}
+
+
+/* HEADER - FIM */
+/* SEÇÃO 2 - INICIO */
+
+
+.section2 {
+    background-image: linear-gradient(to right, rgb(8, 21, 32), rgb(14, 56, 66), rgb(15, 73, 92));
+    /* width: 100vw; */
+    /* text-align: center; */
+    padding: 25px 60px;
+}
+
+.section2-div {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hulu-disney-div {
+    width: 20%;
+    margin-left: 8.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disney-duo-div {
+    width: 60%;
+    height: 100%;
+    padding-left: 4%;
+}
+
+.disney-duo-desc {
+    font-family: "Graphik-Regular";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.24;
+    padding-top: 0.5vh;
+}
+
+.button-terms-div {
+    padding-top: 1vh;
+    padding-right: 4%;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    /* Alterado de inline-block para flex */
+    flex-direction: column;
+    align-items: center;
+    /* Organiza os elementos na vertical */
+}
+
+.submit-both {
+    width: 60%;
+    font-weight: 0;
+}
+
+.terms-apply-packages {
+    font-size: 10px;
+    padding-top: 1vh;
+    color: rgb(200, 191, 231);
+}
+
+/* SEÇÃO 2 - FIM  */
+/* SEÇÃO 3 - INICIO */
+
+.section3 {
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(41, 166, 104));
+}
+
+.section3-div {
+    padding: 30px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.build-the-plan {
+    font-family: "Graphik-Semibold";
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 2.5vh;
+}
+
+.start-building {
+    /* font-weight: 600; */
+    font-family: "Graphik-Semibold";
+    background: none;
+    border: solid 2px whitesmoke;
+    border-radius: 4px;
+    padding: 1.5vh 4.5vw;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.start-building:hover{
+    background-color: rgb(165,184,176);
+    border-color: rgb(165,184,176);
+    color: black;
+}
+
+/* SEÇÃO 3 - FIM  */
+/* SEÇÃO 4 - INICIO */
+
