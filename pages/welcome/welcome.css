@@ -19,36 +19,36 @@ button {
 
 
 .section1 {
-    height: 56vh;
+    height: 580px;
     width: 100%;
     /* padding-bottom: 50vh; */
 }
 
 .header-background {
     width: 100%;
-    height: 695px;
+    height: 850px;
     z-index: -100;
     position: absolute;
     overflow-y: hidden;
 }
 
 .nav-dark {
-    position: fixed;
+    position: absolute;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
     width: 100%;
-    height: 19vh;
+    height: 200px;
     z-index: -99;
 }
 
 .nav-main {
     display: flex;
     justify-content: space-between;
-    height: 8vh;
+    height: 90px;
 }
 
 .hulu-icon-nav {
-    width: 3.2vw;
-    height: 2.2vh;
+    width: 67px;
+    height: 23px;
     padding-left: 2.2%;
     padding-top: 1.4%;
     /* z-index: 1; */
@@ -61,13 +61,13 @@ button {
     border: none;
     border-radius: 7px;
     color: #a8afbd;
-    width: 4.5vw;
-    height: 4.2vh;
-    margin-right: 2.3%;
-    margin-top: 1%;
+    width: 90px;
+    height: 45px;
+    margin-right: 45px;
+    margin-top: 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
     letter-spacing: 0.5px;
-    font-size: 80%;
+    font-size: 100%;
 }
 
 .nav-login:hover {
@@ -76,7 +76,7 @@ button {
 }
 
 .disney-packages {
-    margin-top: 9.2vh;
+    margin-top: 90px;
     /* background-color: rgb(0, 0, 118); */
     width: 100%;
     display: flex;
@@ -88,50 +88,44 @@ button {
     display: inline-block;
     /* background-color: rgb(0, 108, 135); */
     text-align: center;
-    margin-left: 0.4vw;
-    margin-right: 0.4vw;
+    margin: 0px 20px;
 }
 
 .title-packages {
     color: rgb(28, 231, 131);
     font-family: "Graphik-Semibold", sans-serif;
-    font-size: 12px;
-    padding-bottom: 1.4vh;
+    font-size: 14px;
+    padding-bottom: 10px;
     user-select: none;
 }
 
 .img-packages {
-    width: 90%;
-    height: 6.5vh;
+    width: 340px;
+    height: 67px;
 
 }
 
 .price-packages {
     color: whitesmoke;
-    /* letter-spacing: 100%; */
-    line-height: 3.1vh;
-    /* font-size: 5vmin, 10vmax; */
-    font-size: 22px;
-    margin-bottom: 1.5vh;
-    transform: scaleY(1.05);
-    padding-top: 1.5vh;
+    line-height: 33px;
+    font-size: 26px;
+    padding-top: 12px;
+    padding-bottom: 17px;
     font-weight: 600;
 }
 
 .submit-packages {
-    font-family: "Graphik-Regular", sans-serif;
+    font-family: "Graphik-Semibold", sans-serif;
     background-color: rgb(28, 231, 131);
-    width: 100%;
+    width: 380px;
     border: none;
     border-radius: 4px;
-    /* height: 4.5vh; */
-    /* letter-spacing: 0.1vh; */
     transition: background-color 0.1s ease, color 0.1s ease;
-    font-size: 12.5px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 1;
     letter-spacing: 0.6px;
-    height: 40px;
+    height: 45px;
     overflow: hidden;
     color: black;
 }
@@ -141,17 +135,17 @@ button {
 }
 
 .terms-apply-div {
-    padding-top: 1.5vh;
+    padding-top: 15px;
     width: 100%;
 }
 
 .terms-apply-packages {
-    font-size: 13px;
+    font-size: 15px;
     color: whitesmoke;
 }
 
 .div-sign-up-hulu-only {
-    padding-top: 3vh;
+    padding-top: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -159,7 +153,7 @@ button {
 
 .sign-up-hulu-only {
     color: whitesmoke;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .sign-up-hulu-only:hover {
@@ -201,22 +195,20 @@ button {
 
 .disney-duo-desc {
     font-family: "Graphik-Regular";
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 400;
     line-height: 1.24;
-    padding-top: 0.5vh;
+    padding-top: 10px;
 }
 
 .button-terms-div {
-    padding-top: 1vh;
+    padding-top: 18px;
     padding-right: 4%;
     width: 20%;
     height: 100%;
     display: flex;
-    /* Alterado de inline-block para flex */
     flex-direction: column;
     align-items: center;
-    /* Organiza os elementos na vertical */
 }
 
 .submit-both {
@@ -224,10 +216,10 @@ button {
     font-weight: 0;
 }
 
-.terms-apply-packages {
+.terms-apply-section2 {
     font-size: 10px;
-    padding-top: 1vh;
-    color: rgb(200, 191, 231);
+    padding-top: 10px;
+    color: rgba(249, 249, 249, 0.7);
 }
 
 /* SEÇÃO 2 - FIM  */
@@ -245,9 +237,9 @@ button {
 
 .build-the-plan {
     font-family: "Graphik-Semibold";
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 400;
-    padding-bottom: 2.5vh;
+    padding-bottom: 25px;
 }
 
 .start-building {
@@ -256,16 +248,126 @@ button {
     background: none;
     border: solid 2px whitesmoke;
     border-radius: 4px;
-    padding: 1.5vh 4.5vw;
+    padding: 15px 90px;
     transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 
-.start-building:hover{
-    background-color: rgb(165,184,176);
-    border-color: rgb(165,184,176);
+.start-building:hover {
+    background-color: rgb(165, 184, 176);
+    border-color: rgb(165, 184, 176);
     color: black;
 }
 
 /* SEÇÃO 3 - FIM  */
 /* SEÇÃO 4 - INICIO */
 
+.section4 {
+    background-color: #0b0b0b;
+    /* width: 100%; */
+    padding: 90px 90px;
+    z-index: -5;
+}
+
+.section4-div {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.section4-title {
+    font-family: "Graphik-Semibold", sans-serif;
+    font-size: 47px;
+    padding-top: 8px;
+}
+
+.section4-desc {
+    font-size: 18px;
+    padding-top: 25px;
+}
+
+.list-movies-div {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.movie-div {
+    display: inline-block;
+    margin: 0px 8px;
+    width: 300px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+
+    /* Borda transparente e depois fica visível */
+    border: 3px solid transparent;
+    border-radius: 20px;
+    padding: 4px;
+    cursor: pointer;
+    background-image: #0b0b0b;
+    transition: border-color 0.2s ease;
+}
+
+.movie-div:hover{
+    border-color: #a0a0a0;
+}
+
+.movie-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.4); */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    display: inline-block;
+    text-align: left;
+    padding: 20px 20px;
+    color: white;
+
+    transition: background-image 0.2s ease, background-color 0.2s ease;
+}
+
+.movie-overlay:hover{
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.movie-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.movie-desc {
+    font-family: "Graphik-Semibold";
+    font-weight: 900;
+    z-index: 2;
+    padding-bottom: 10px;
+}
+
+.movie-title {
+    font-family: "Graphik-Semibold";
+    font-weight: 600;
+    font-size: 25px;
+    z-index: 2;
+}
+
+.button-get-this-deal {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* Testando responsividade */
+    min-width: 160px;
+    max-width: 160px;
+}
+
+.use-terms {
+    font-size: 9px;
+    color: #b9b9b9;
+    margin-bottom: 30px;
+    word-spacing: 2px;
+}
+
+.view-channels {
+    color: rgb(205, 205, 205);
+    font-family: "Graphik-Semibold";
+}
