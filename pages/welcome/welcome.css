@@ -10,13 +10,11 @@
     letter-spacing: 0.2px;
 }
 
-button {
+button, a {
     cursor: pointer;
 }
 
-
-/* HEADER - INICIO */
-
+/* -----------SEÇÃO 1----------- */
 
 .section1 {
     height: 580px;
@@ -160,10 +158,7 @@ button {
     text-decoration: none;
 }
 
-
-/* HEADER - FIM */
-/* SEÇÃO 2 - INICIO */
-
+/* -----------SEÇÃO 2----------- */
 
 .section2 {
     background-image: linear-gradient(to right, rgb(8, 21, 32), rgb(14, 56, 66), rgb(15, 73, 92));
@@ -222,8 +217,7 @@ button {
     color: rgba(249, 249, 249, 0.7);
 }
 
-/* SEÇÃO 2 - FIM  */
-/* SEÇÃO 3 - INICIO */
+/* -----------SEÇÃO 3----------- */
 
 .section3 {
     background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(41, 166, 104));
@@ -258,8 +252,7 @@ button {
     color: black;
 }
 
-/* SEÇÃO 3 - FIM  */
-/* SEÇÃO 4 - INICIO */
+/* -----------SEÇÃO 4----------- */
 
 .section4 {
     background-color: #0b0b0b;
@@ -274,13 +267,13 @@ button {
     width: 100%;
 }
 
-.section4-title {
+.section-title {
     font-family: "Graphik-Semibold", sans-serif;
     font-size: 47px;
     padding-top: 8px;
 }
 
-.section4-desc {
+.section-desc {
     font-size: 18px;
     padding-top: 25px;
 }
@@ -371,3 +364,53 @@ button {
     color: rgb(205, 205, 205);
     font-family: "Graphik-Semibold";
 }
+
+/* -----------SEÇÃO 4----------- */
+
+.section5 {
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+}
+
+.channel-background {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+.channel-overlay {
+    padding: 205px 315px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.2), rgba(0,0,0,0));
+}
+
+.channel-nav  {
+    width: 375px;
+}
+
+.channel-options  {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.channel-button {
+    font-family: "Graphik-Medium";
+    font-weight: 400;
+    background: none;
+    border: none;
+}
+
+.channel-button  {}
+
+.channel-bar  {}
+
+.channel-tittle-desc  {}
+
+.channel-tittle  {}
+
+.channel-desc  {}
+
+.channel-sponsors {}
