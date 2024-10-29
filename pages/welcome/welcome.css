@@ -390,7 +390,7 @@ button, a {
     width: 375px;
 }
 
-.channel-options  {
+.channel-options {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -401,24 +401,37 @@ button, a {
     font-weight: 400;
     background: none;
     border: none;
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
 }
 
-.channel-button  {}
+.channel-button:hover {
+    opacity: 0.3;
+}
 
-.channel-bar  {
+.channel-button.selected {
+    opacity: 1;
+}
+
+.channel-button.selected:hover {
+    opacity: 0.7;
+}
+
+.channel-bar {
     width: 375px;
     height: 5px;
     margin-top: 15px;
-    margin-bottom: 40px;
-    background-color: black;
+    margin-bottom: 30px;
     position: relative;
-    overflow: hidden;
 }
 
 .channel-bar-progress {
     background-color: whitesmoke;
     height: 100%;
-    width: 25%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    transition: width 0.5s ease, left 0.5s ease;
 }
 
 .channel-all  {}
@@ -463,4 +476,23 @@ button, a {
 .channel-use-terms{
     /* padding-top: 0px;
     margin-top: 0px; */
+}
+
+/* Adicionado animação de surgimento dos elementos da Seção 5 */
+
+.channel-animation {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* Começa 20px abaixo da posição original */
+    animation: slide-up 0.7s forwards; /* Chama a animação */
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0%;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
