@@ -1,8 +1,11 @@
 // ---------  SEÇÃO 5 --------- //
 
+console.log(window)
+
 // Função para definir o primeiro canal (indíce 0) como inicial
 window.addEventListener("load", () => {
     moveChannel(0)
+    movePlan(1)
 })
 
 // Função de mudança de opções de Canais
@@ -13,7 +16,7 @@ function moveChannel(option) {
     const channelSelected = channelOptions[option]
 
     const channelBarProgressWidth = channelSelected.offsetWidth;
-    const channelBarProgressPosition = channelSelected.offsetLeft - 315; // 315px é o padding eixo-x da Seção 5
+    const channelBarProgressPosition = channelSelected.offsetLeft - 315; // 315px é o padding esquerdo da Seção 5
 
     channelBarProgress.style.width = `${channelBarProgressWidth}px`
     channelBarProgress.style.left = `${channelBarProgressPosition}px`
@@ -83,7 +86,7 @@ function moveChannel(option) {
 
     // Animação de surgimento dos elementos
     const channelAll = document.querySelectorAll('.channel-all > h2, .channel-all > h3, .channel-all > .channel-sponsors, .channel-all > h4');
-    
+
     // Remove a classe de animação, se já estiver presente, para reiniciar a animação
     channelAll.forEach((element) => {
         element.classList.remove('channel-animation');
@@ -93,4 +96,43 @@ function moveChannel(option) {
 
 };
 
-// ---------  SEÇÃO 5 --------- //
+// ---------  SEÇÃO 6 --------- //
+
+function showPlans(){
+    
+}
+
+// Função para mudar o plano da Seção 6
+function movePlan(option){
+
+    // Tornar o bloco de opções visivel
+    const planDiv = document.querySelector(".plan-option-div")
+
+                                                                /*if (planDiv.style.display === "none" || planDiv.style.display === "") {
+                                                                    planDiv.style.display = "flex"; //
+                                                                } else {
+                                                                    planDiv.style.display = "none"; //
+                                                                }*/
+    
+    // Encurtando o código com operação ternária, deu certo!
+    planDiv.style.display === "none" || "" ? planDiv.style.display= "flex" : planDiv.style.display = "none"
+
+    // Mudando a posição da seta após clicar para ver as opções
+    const planArrowDropdown = document.querySelector(".plan-dropdown-image")
+    planDiv.style.display === "none" || "" ? planArrowDropdown.style.transform = "rotate(360deg)" : planArrowDropdown.style.transform = "rotate(180deg)"
+
+    // Mudando o nome na barra com base na opção selecionada
+    const planNameBar = document.querySelector(".plan-selection") // Nome da barra
+    const planNameOptions = [
+        "Hulu",
+        "Disney Bundle Duo",
+        "Disney Bundle Trio",
+        "Disney+, Hulu, Max Bundle",
+        "Hulu + Live TV"
+    ]
+    planNameBar.innerHTML = planNameOptions[option]
+
+    const planOptions = document.querySelectorAll(".plan-option") 
+    const planSelected = planOptions[option]
+}
+
