@@ -98,29 +98,20 @@ function moveChannel(option) {
 
 // ---------  SEÇÃO 6 --------- //
 
-function showPlans(){
-    
-}
-
-// Função para mudar o plano da Seção 6
-function movePlan(option){
-
+// Função para mostrar o bloco de opções
+function showPlans() {
     // Tornar o bloco de opções visivel
     const planDiv = document.querySelector(".plan-option-div")
-
-                                                                /*if (planDiv.style.display === "none" || planDiv.style.display === "") {
-                                                                    planDiv.style.display = "flex"; //
-                                                                } else {
-                                                                    planDiv.style.display = "none"; //
-                                                                }*/
-    
     // Encurtando o código com operação ternária, deu certo!
-    planDiv.style.display === "none" || "" ? planDiv.style.display= "flex" : planDiv.style.display = "none"
+    planDiv.style.display == "flex" || "" ? planDiv.style.display = "none" : planDiv.style.display = "flex"
 
     // Mudando a posição da seta após clicar para ver as opções
     const planArrowDropdown = document.querySelector(".plan-dropdown-image")
-    planDiv.style.display === "none" || "" ? planArrowDropdown.style.transform = "rotate(360deg)" : planArrowDropdown.style.transform = "rotate(180deg)"
+    planDiv.style.display == "flex" || "" ? planArrowDropdown.style.transform = "rotate(360deg)" : planArrowDropdown.style.transform = "rotate(180deg)"
+}
 
+// Função para mudar o plano da Seção 6
+function movePlan(option) {
     // Mudando o nome na barra com base na opção selecionada
     const planNameBar = document.querySelector(".plan-selection") // Nome da barra
     const planNameOptions = [
@@ -132,7 +123,14 @@ function movePlan(option){
     ]
     planNameBar.innerHTML = planNameOptions[option]
 
-    const planOptions = document.querySelectorAll(".plan-option") 
+    // Arrumando bug de undefined enquanto não escolher uma opção
+    const planDiv = document.querySelector(".plan-option-div")
+    planDiv.style.display = "none";
+    const planArrowDropdown = document.querySelector(".plan-dropdown-image")
+    planArrowDropdown.style.transform = "rotate(180deg)"
+
+    // Mudando as informações de acordo com o plano selecionado
+    const planOptions = document.querySelectorAll(".plan-option")
     const planSelected = planOptions[option]
 }
 
