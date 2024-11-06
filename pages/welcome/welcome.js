@@ -103,11 +103,11 @@ function showPlans() {
     // Tornar o bloco de opções visivel
     const planDiv = document.querySelector(".plan-option-div")
     // Encurtando o código com operação ternária, deu certo!
-    planDiv.style.display == "flex" || "" ? planDiv.style.display = "none" : planDiv.style.display = "flex"
+    planDiv.style.display == "flex" ? planDiv.style.display = "none" : planDiv.style.display = "flex"
 
     // Mudando a posição da seta após clicar para ver as opções
     const planArrowDropdown = document.querySelector(".plan-dropdown-image")
-    planDiv.style.display == "flex" || "" ? planArrowDropdown.style.transform = "rotate(360deg)" : planArrowDropdown.style.transform = "rotate(180deg)"
+    planDiv.style.display == "flex" ? planArrowDropdown.style.transform = "rotate(360deg)" : planArrowDropdown.style.transform = "rotate(180deg)"
 }
 
 // Função para mudar o plano da Seção 6
@@ -123,7 +123,7 @@ function movePlan(option) {
     ]
     planNameBar.innerHTML = planNameOptions[option]
 
-    // Arrumando bug de undefined enquanto não escolher uma opção
+    // Fechando o bloco de opções
     const planDiv = document.querySelector(".plan-option-div")
     planDiv.style.display = "none";
     const planArrowDropdown = document.querySelector(".plan-dropdown-image")
@@ -132,5 +132,13 @@ function movePlan(option) {
     // Mudando as informações de acordo com o plano selecionado
     const planOptions = document.querySelectorAll(".plan-option")
     const planSelected = planOptions[option]
+
+    const planTableInfos = [
+        [[], [], []],
+        [[], [], []],
+        [[], [], []],
+        [[], [], []],
+        [[], [], []]
+    ]
 }
 
